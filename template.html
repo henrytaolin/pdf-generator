@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PDF</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                color: #333;
+            }
+    
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+    
+            th, td {
+                padding: 10px;
+                text-align: center;
+            }
+    
+            th {
+                background-color: #333;
+                color: #fff;
+            }
+    
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+    
+            img {
+                width: 40px;
+                height: 40px;
+                display: block;
+                margin: 0 auto;
+            }
+    
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+    
+            footer {
+                text-align: center;
+                font-style: italic;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="star-icon.png" width="40" height="40">
+        <h1>Invoice</h1>
+        <p>Name: {{ name }}</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A sample product</td>
+                    <td>{{ quantity }}</td>
+                </tr>
+                <tr>
+                    <td>A sample product</td>
+                    <td>{{ quantity }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            This is an example
+        </footer>
+    </body>
+</html>
